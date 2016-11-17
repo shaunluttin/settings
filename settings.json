@@ -1,0 +1,5 @@
+{
+    "files.autoSave": "off",
+    "window.zoomLevel": 0,
+    "csharp.suppressDotnetRestoreNotification": true
+}
