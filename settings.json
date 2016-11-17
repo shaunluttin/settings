@@ -1,5 +1,6 @@
 {
-    "files.autoSave": "off",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 5000,
     "window.zoomLevel": 0,
     "csharp.suppressDotnetRestoreNotification": true
 }
