@@ -1,4 +1,4 @@
-# vscode-settings
+# vscode-settings 
 
 These are my preferrered `settings.json` and `.editorconfig` settings for vs code.
 
