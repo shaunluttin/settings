@@ -8,5 +8,9 @@
     "editor.wordWrap": false,
     "window.menuBarVisibility": "default",
     "workbench.welcome.enabled": false,
-    "markdown.preview.fontSize": 12
+    "markdown.preview.fontSize": 12,
+    "editor.rulers": [
+        100, 
+        140
+    ]
 }
