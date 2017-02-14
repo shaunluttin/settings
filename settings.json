@@ -9,6 +9,7 @@
     "window.menuBarVisibility": "default",
     "workbench.welcome.enabled": false,
     "markdown.preview.fontSize": 12,
+    "editor.renderControlCharacters": true,
     "editor.rulers": [
         100, 
         140
