@@ -1,7 +1,12 @@
 {
     "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 5000,
+    "files.autoSaveDelay": 2000,
     "window.zoomLevel": 0,
     "csharp.suppressDotnetRestoreNotification": true,
-    "editor.renderWhitespace": "all"
+    "editor.renderWhitespace": "all",
+    "editor.cursorStyle": "block",
+    "editor.wordWrap": false,
+    "window.menuBarVisibility": "default",
+    "workbench.welcome.enabled": false,
+    "markdown.preview.fontSize": 12
 }
