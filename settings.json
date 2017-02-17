@@ -1,4 +1,14 @@
 {
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/*.js.map": true,
+        "**/*.js": {
+            "when": "$(basename).ts"
+        }
+    },
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 2000,
     "window.zoomLevel": 0,
@@ -6,10 +16,10 @@
     "workbench.welcome.enabled": false,
     "editor.renderWhitespace": "all",
     "editor.cursorStyle": "block",
-    "editor.wordWrap": false,
+    "editor.wordWrap": true,
     "editor.renderControlCharacters": true,
     "editor.rulers": [
-        100, 
+        100,
         140
     ]
 }
