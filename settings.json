@@ -1,5 +1,8 @@
 {
   "files.exclude": {
+    "**/coverage": true,
+    "**/.nyc_output": true,
+    "**/public": true,
     "**/.git": true,
     "**/.svn": true,
     "**/.hg": true,
@@ -8,9 +11,6 @@
     "**/*.js": {
       "when": "$(basename).ts"
     },
-    "**/**.js": {
-      "when": "$(basename).coffee"
-    },
     "**/*.d.ts": {
       "when": "$(basename).ts"
     }
@@ -18,8 +18,8 @@
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 2000,
   "window.zoomLevel": 0,
-  "csharp.suppressDotnetRestoreNotification": true,
   "workbench.welcome.enabled": false,
+  "csharp.suppressDotnetRestoreNotification": true,
   "editor.renderWhitespace": "all",
   "editor.cursorStyle": "line",
   "editor.wordWrap": "off",
@@ -31,5 +31,6 @@
   "editor.fontSize": 16,
   "editor.quickSuggestions": true,
   "terminal.integrated.fontSize": 16,
-  "terminal.integrated.shell.windows": "C:\\windows\\Sysnative\\cmd.exe"
+  "terminal.integrated.shell.windows": "C:\\windows\\Sysnative\\cmd.exe",
+  "vim.disableAnnoyingNeovimMessage": true
 }
