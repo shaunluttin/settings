@@ -3,6 +3,7 @@
 * **VS Code** `Copy-Item vscode\settings.json $env:APPDATA\Code\User\`
 * **Editor Config** Copy `.editorconfig` into the project root and install its extension (e.g. `ext install EditorConfig`).
 * **Vim** `Copy-Item .\vim\_vimrc ~\`
+* **Firefox** See https://support.mozilla.org/en-US/kb/back-and-restore-information-firefox-profiles
 
 See also 
 
