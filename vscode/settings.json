@@ -1,6 +1,7 @@
 {
     "files.autoSave": "onFocusChange",
     "window.zoomLevel": 0,
+    "workbench.startupEditor": "none",
     "csharp.suppressDotnetRestoreNotification": true,
     "editor.renderWhitespace": "none",
     "editor.rulers": [
@@ -26,8 +27,7 @@
             "when": "$(basename).map"
         }
     },
-    "vim.disableAnnoyingNeovimMessage": true,
-    "typescript.check.tscVersion": false,
     "terminal.integrated.fontSize": 14,
-    "editor.fontSize": 14
+    "editor.fontSize": 14,
+    "extensions.ignoreRecommendations": false
 }
