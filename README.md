@@ -5,7 +5,7 @@
 * **Vim** 
   * `Copy-Item settings\vim\_vimrc ~\`
   * `New-Item -type directory ~\vimfiles\autoload, ~\vimfiles\bundle`
-  * `Invoke-RestMethod -uri https://tpo.pe/pathogen.vim -OutFile ~\vimfiles\autoload\pathogen.vim
+  * `Invoke-RestMethod -uri https://tpo.pe/pathogen.vim -OutFile ~\vimfiles\autoload\pathogen.vim`
 * **Firefox** See https://support.mozilla.org/en-US/kb/back-and-restore-information-firefox-profiles
 
 See also 
