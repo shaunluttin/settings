@@ -14,6 +14,11 @@ Copy `.editorconfig` into the project root and install its extension (e.g. `ext 
     New-Item -type directory ~\vimfiles\autoload, ~\vimfiles\bundle
     Invoke-RestMethod -uri https://tpo.pe/pathogen.vim -OutFile ~\vimfiles\autoload\pathogen.vim
     
+**ConEmu**
+
+* ConEmu > Settings > Import
+* TODO: Figure out how to use these from `C:\Program Files\ConEmu\ConEmu.xml`.   
+    
 **Firefox** 
 
 See https://support.mozilla.org/en-US/kb/back-and-restore-information-firefox-profiles
