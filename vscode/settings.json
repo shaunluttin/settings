@@ -34,5 +34,6 @@
     "typescript.tsdk": "./node_modules/typescript/lib",
     "window.zoomLevel": 0,
     "workbench.startupEditor": "none",
-    "explorer.openEditors.visible": 0
+    "explorer.openEditors.visible": 0,
+    "powershell.integratedConsole.showOnStartup": false
 }
