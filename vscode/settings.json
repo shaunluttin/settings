@@ -2,7 +2,7 @@
     "csharp.suppressDotnetRestoreNotification": true,
     "editor.renderWhitespace": "boundary",
     "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": "1000",
+    "files.autoSaveDelay": 1000,
     "editor.rulers": [
         80,
         100
@@ -31,7 +31,7 @@
     "scm.diffDecorations":"none",
     "git.decorations.enabled": false,
     "git.enabled": false,
-    "typescript.tsdk": "./node_modules/typescript/lib",
+    // "typescript.tsdk": "./node_modules/typescript/lib",
     "window.zoomLevel": 0,
     "workbench.startupEditor": "none",
     "explorer.openEditors.visible": 0,
