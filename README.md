@@ -1,11 +1,5 @@
 # settings 
 
-## PowerShell
-
-    Copy-Item settings\PowerShell\* $Home\Documents\WindowsPowerShell -recurse [-force]
-
-https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles
-
 ## VS Code
 
     Copy-Item settings\vscode\settings.json $env:APPDATA\Code\User\
