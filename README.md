@@ -34,11 +34,6 @@ vimrc file location: `https://stackoverflow.com/a/8977682/1108891` (i.e. run `:v
     :e $MYVIMRC
     :scriptnames
     
-## ConEmu
-
-* ConEmu > Settings > Import
-* TODO: Figure out how to use these from `C:\Program Files\ConEmu\ConEmu.xml`.   
-    
 ## Firefox
 
 See https://support.mozilla.org/en-US/kb/back-and-restore-information-firefox-profiles
