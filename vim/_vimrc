@@ -7,6 +7,14 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=0
 set expandtab 
+set autoindent
 
 set relativenumber
 set number
+
+if has("win32")
+    set shell=cmd.exe
+    set shellcmdflag=/c\ powershell.exe\ -NoLogo\ -NoProfile\ -NonInteractive\ -ExecutionPolicy\ RemoteSigned
+    set shellpipe=|
+    set shellredir=>
+endif
