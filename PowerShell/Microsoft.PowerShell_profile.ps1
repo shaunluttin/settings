@@ -1,9 +1,25 @@
 
+#TODO: Factor these functions into their own files in the /Scripts directory. 
+#That will require about 20-minutes of research on how to do that.
+
 Write-Output "Loading Shaun Luttin's Profile"
 
 # https://ss64.com/ps/syntax-functions.html
 
 $FILE_STORAGE_ROOT = 'C:/dev/shaunluttin/happiness/';
+
+function Convert-MarkdownToOdt {
+    param([string]$absoluteFilePath)
+
+    if(-not (Test-Path $absoluteFilePath)) {
+        Write-Output "$($absoluteFilePath) does not exist."
+        return
+    }
+
+    $destination = [io.path]::ChangeExtension($absoluteFilePath, "odt")
+
+    pandoc $absoluteFilePath -f markdown -t odt -o $destination
+}
 
 function Add-Distraction {
     # slug is work/life
