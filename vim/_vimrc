@@ -1,12 +1,5 @@
 execute pathogen#infect()
 
-if has("win32")
-    set shell=cmd.exe
-    set shellcmdflag=/c\ powershell.exe\ -NoLogo\ -NoProfile\ -NonInteractive\ -ExecutionPolicy\ RemoteSigned
-    set shellpipe=|
-    set shellredir=>
-endif
-
 au BufRead,BufNewFile *.ts setfiletype typescript
 
 syntax on
