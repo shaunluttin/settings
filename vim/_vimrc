@@ -1,20 +1,24 @@
 execute pathogen#infect()
 
-syntax on
-filetype plugin indent on
-
-set tabstop=4
-set shiftwidth=4
-set softtabstop=0
-set expandtab 
-set autoindent
-
-set relativenumber
-set number
-
 if has("win32")
     set shell=cmd.exe
     set shellcmdflag=/c\ powershell.exe\ -NoLogo\ -NoProfile\ -NonInteractive\ -ExecutionPolicy\ RemoteSigned
     set shellpipe=|
     set shellredir=>
 endif
+
+au BufRead,BufNewFile *.ts setfiletype typescript
+
+syntax on
+filetype plugin indent on
+
+set tabstop=4
+set shiftwidth=4
+set softtabstop=0
+set expandtab
+set autoindent
+
+set relativenumber
+set number
+
+com! FormatJson %!jq "."
