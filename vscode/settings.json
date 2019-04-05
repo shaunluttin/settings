@@ -1,7 +1,7 @@
 {
     "csharp.suppressDotnetRestoreNotification": true,
     "editor.renderWhitespace": "boundary",
-    "files.autoSave": "afterDelay",
+    "files.autoSave": "off",
     "files.autoSaveDelay": 10000,
     "editor.rulers": [
         80,
@@ -38,7 +38,7 @@
         }
     },
     "terminal.integrated.fontSize": 14,
-    "scm.diffDecorations":"none",
+    "scm.diffDecorations": "none",
     "git.decorations.enabled": false,
     "git.enabled": false,
     "merge-conflict.codeLens.enabled": false,
@@ -47,9 +47,11 @@
     "window.zoomLevel": 0,
     "workbench.startupEditor": "none",
     "explorer.openEditors.visible": 0,
+    "explorer.autoReveal": true,
     "powershell.integratedConsole.showOnStartup": false,
     "typescript.tsdk": "node_modules/typescript/lib",
     "javascript.updateImportsOnFileMove.enabled": "always",
     "breadcrumbs.enabled": true,
-    "typescript.updateImportsOnFileMove.enabled": "always"
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDragAndDrop": false
 }
