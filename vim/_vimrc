@@ -1,3 +1,13 @@
+" On Windows, also use ~/.vim instead of ~/vimfiles; 
+" this makes synchronization across (heterogeneous) systems easier.
+" See https://stackoverflow.com/a/53370672/1108891
+if has('win32') || has('win64')
+    let &runtimepath = substitute(&runtimepath, '\C\V' . escape($HOME.'/vimfiles', '\'), escape($HOME.'/.vim', '\&'), 'g')
+    if exists('&packpath')
+        let &packpath = &runtimepath
+    endif
+endif
+
 execute pathogen#infect()
 
 au BufRead,BufNewFile *.ts setfiletype typescript
