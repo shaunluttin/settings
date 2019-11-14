@@ -22,7 +22,6 @@
   "liveshare.connectionMode": "relay",
   "merge-conflict.codeLens.enabled": false,
   "merge-conflict.decorators.enabled": false,
-  "powershell.integratedConsole.showOnStartup": false,
   "problems.decorations.enabled": false,
   "remote.WSL.fileWatcher.polling": true,
   "scm.diffDecorations": "none",
@@ -58,5 +57,4 @@
       "when": "$(basename).map"
     }
   },
-  "liveshare.connectionMode": "relay",
 }
