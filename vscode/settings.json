@@ -1,8 +1,17 @@
 {
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-vscode.csharp"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "breadcrumbs.enabled": true,
+  "csharp.format.enable": true,
   "csharp.suppressDotnetRestoreNotification": true,
   "editor.acceptSuggestionOnEnter": "on",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.lineNumbers": "relative",
@@ -14,7 +23,7 @@
   "explorer.openEditors.visible": 0,
   "extensions.ignoreRecommendations": false,
   "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 10000,
+  "files.autoSaveDelay": 30000,
   "files.eol": "\n",
   "git.decorations.enabled": false,
   "git.enabled": false,
@@ -56,5 +65,5 @@
     "**/*.map": {
       "when": "$(basename).map"
     }
-  },
+  }
 }
