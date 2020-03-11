@@ -8,6 +8,16 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true,
+  },
   "breadcrumbs.enabled": true,
   "csharp.format.enable": true,
   "csharp.suppressDotnetRestoreNotification": true,
@@ -52,7 +62,7 @@
     "**/.gitignore": true,
     "**/.hg": true,
     "**/.svn": true,
-    "**/bin": true,
+    "**/bin": false,
     "**/CVS": true,
     "**/LICENSE": true,
     "**/node_modules": true,
@@ -65,5 +75,6 @@
     "**/*.map": {
       "when": "$(basename).map"
     }
-  }
+  },
+  "todo-tree.tree.showScanModeButton": false
 }
