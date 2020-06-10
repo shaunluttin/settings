@@ -8,6 +8,8 @@ if has('win32') || has('win64')
     endif
 endif
 
+packloadall
+
 au BufRead,BufNewFile *.ts setfiletype typescript
 
 syntax on
