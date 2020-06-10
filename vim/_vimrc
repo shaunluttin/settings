@@ -8,8 +8,6 @@ if has('win32') || has('win64')
     endif
 endif
 
-execute pathogen#infect()
-
 au BufRead,BufNewFile *.ts setfiletype typescript
 
 syntax on
