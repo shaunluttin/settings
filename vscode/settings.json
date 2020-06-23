@@ -1,7 +1,4 @@
 {
-  "[csharp]": {
-    "editor.defaultFormatter": "ms-vscode.csharp"
-  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -16,11 +13,9 @@
   },
   "editor.codeActionsOnSave": {
     "source.fixAll": true,
-    "source.organizeImports": true,
+    "source.organizeImports": true
   },
   "breadcrumbs.enabled": true,
-  "csharp.format.enable": true,
-  "csharp.suppressDotnetRestoreNotification": true,
   "editor.acceptSuggestionOnEnter": "on",
   "editor.fontSize": 14,
   "editor.formatOnSave": true,
@@ -38,7 +33,6 @@
   "git.decorations.enabled": false,
   "git.enabled": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "liveshare.connectionMode": "relay",
   "merge-conflict.codeLens.enabled": false,
   "merge-conflict.decorators.enabled": false,
   "problems.decorations.enabled": false,
@@ -52,10 +46,7 @@
   "workbench.activityBar.visible": false,
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "none",
-  "editor.rulers": [
-    80,
-    100
-  ],
+  "editor.rulers": [80, 100],
   "files.exclude": {
     "**/.DS_Store": true,
     "**/.git": true,
