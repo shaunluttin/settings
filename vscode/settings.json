@@ -1,34 +1,23 @@
 {
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.organizeImports": true
-  },
   "breadcrumbs.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": false, // ES Lint hangs often with a large project.
+    "source.organizeImports": true // TypeScript language server
+  },
   "editor.acceptSuggestionOnEnter": "on",
   "editor.fontSize": 14,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": true, // Prettier
   "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "boundary",
+  "editor.rulers": [80, 100],
   "editor.wordWrap": "on",
   "explorer.autoReveal": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 0,
   "extensions.ignoreRecommendations": false,
   "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 30000,
+  "files.autoSaveDelay": 3000,
   "files.eol": "\n",
   "git.decorations.enabled": false,
   "git.enabled": false,
@@ -39,15 +28,20 @@
   "remote.WSL.fileWatcher.polling": true,
   "scm.diffDecorations": "none",
   "terminal.integrated.fontSize": 14,
+  "todo-tree.tree.showScanModeButton": false,
   "typescript.preferences.quoteStyle": "single",
-  "typescript.tsdk": "./node_modules/typescript/lib",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 1,
   "workbench.activityBar.visible": false,
+  "workbench.colorTheme": "monokai-chacoral",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "none",
-  "editor.rulers": [80, 100],
+  "workbench.colorCustomizations": {
+    "list.activeSelectionBackground": "#ffff00",
+    "list.activeSelectionForeground": "#000000"
+  },
   "files.exclude": {
+    "**/.devCache": true,
     "**/.DS_Store": true,
     "**/.git": true,
     "**/.gitignore": true,
@@ -67,5 +61,22 @@
       "when": "$(basename).map"
     }
   },
-  "todo-tree.tree.showScanModeButton": false
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
