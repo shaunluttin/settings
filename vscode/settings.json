@@ -26,6 +26,7 @@
   "merge-conflict.decorators.enabled": false,
   "problems.decorations.enabled": false,
   "remote.WSL.fileWatcher.polling": true,
+  "powershell.codeFormatting.addWhitespaceAroundPipe": true,
   "scm.diffDecorations": "none",
   "terminal.integrated.fontSize": 14,
   "todo-tree.tree.showScanModeButton": false,
