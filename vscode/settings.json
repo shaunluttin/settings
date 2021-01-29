@@ -46,6 +46,8 @@
     "**/.git": true,
     "**/.gitignore": true,
     "**/.hg": true,
+    "**/_.swp": true,
+    "**/.*~": true,
     "**/.svn": true,
     "**/bin": false,
     "**/CVS": true,
