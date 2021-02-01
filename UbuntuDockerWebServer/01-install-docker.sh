@@ -8,3 +8,7 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
     stable"
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+# Add the current user to the docker group.
+# Log out and back in for the membership to take effect.
+sudo usermod -aG docker bigfont
