@@ -1,10 +1,12 @@
 
-#TODO: Factor these functions into their own files in the /Scripts directory. 
-#That will require about 20-minutes of research on how to do that.
+# TODO Factor these functions into their own files in the /Scripts directory. 
 
 Write-Output "Loading Shaun Luttin's Profile"
 
-# https://ss64.com/ps/syntax-functions.html
+function prompt {
+  $currentDir = Split-Path -leaf -path (Get-Location)
+    "$currentDir> "
+}
 
 $FILE_STORAGE_ROOT = 'C:/dev/shaunluttin/happiness/';
 
