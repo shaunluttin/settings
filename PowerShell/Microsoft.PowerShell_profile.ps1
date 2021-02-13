@@ -1,14 +1,17 @@
 
-# TODO Factor these functions into their own files in the /Scripts directory. 
+#TODO: Factor these functions into their own files in the /Scripts directory. 
+#That will require about 20-minutes of research on how to do that.
 
 Write-Output "Loading Shaun Luttin's Profile"
 
-function prompt {
-  $currentDir = Split-Path -leaf -path (Get-Location)
-    "$currentDir> "
-}
+# https://ss64.com/ps/syntax-functions.html
 
 $FILE_STORAGE_ROOT = 'C:/dev/shaunluttin/happiness/';
+
+function prompt {
+  $currentDir = Split-Path -leaf -path (Get-Location)
+  "$currentDir> "
+}
 
 function Convert-MarkdownToOdt {
     param([string]$absoluteFilePath)
@@ -49,4 +52,10 @@ function Add-Memo {
     param([string]$title)
 
     Write-Output $title
+}
+
+# Chocolatey profile
+$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+if (Test-Path($ChocolateyProfile)) {
+  Import-Module "$ChocolateyProfile"
 }
