@@ -16,7 +16,8 @@ syntax on
 filetype plugin indent on
 
 " This is nice for vimdiff too `vim -d file1 file2`.
-colorscheme peachpuff
+" Another favorite is peachpuff.
+colorscheme desert
 
 set tabstop=4
 set shiftwidth=4
@@ -24,7 +25,6 @@ set softtabstop=0
 set expandtab
 set autoindent
 
-set relativenumber
 set number
 
 com! FormatJson %!jq "."
