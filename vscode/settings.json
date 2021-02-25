@@ -40,6 +40,18 @@
     "list.activeSelectionBackground": "#ffff00",
     "list.activeSelectionForeground": "#000000"
   },
+  "launch": {
+    "configurations": [
+      {
+        "name": ".NET Attach",
+        "type": "clr",
+        "request": "attach",
+        "requireExactSource": false,
+        "processId": "${command:pickProcess}"
+      }
+    ],
+    "compounds": []
+  },
   "files.exclude": {
     "**/.devCache": true,
     "**/.DS_Store": true,
