@@ -1,6 +1,8 @@
-
-#TODO: Factor these functions into their own files in the /Scripts directory. 
-#That will require about 20-minutes of research on how to do that.
+# TODO: Factor these functions into their own files in the /Scripts directory. 
+# That will require about 20-minutes of research on how to do that.
+# What is the canonical approach for organizing large Powershell modules?
+# When to use .psm1 extension? 
+# When to use .ps1 extension?
 
 Write-Output "Loading Shaun Luttin's Profile"
 
@@ -11,6 +13,10 @@ $FILE_STORAGE_ROOT = 'C:/dev/shaunluttin/happiness/';
 function prompt {
   $currentDir = Split-Path -leaf -path (Get-Location)
   "$currentDir> "
+}
+
+function Import-MvModulesAndScripts {
+  C:\dev\mediaValet\MediaValet.Labs\DamShell\Import-MvDamShell.ps1
 }
 
 function Convert-MarkdownToOdt {
@@ -59,3 +65,5 @@ $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
+
+Import-MvModulesAndScripts;
