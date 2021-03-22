@@ -61,7 +61,7 @@
     "**/_.swp": true,
     "**/.*~": true,
     "**/.svn": true,
-    "**/bin": false,
+    "**/bin": true,
     "**/CVS": true,
     "**/LICENSE": true,
     "**/node_modules": true,
