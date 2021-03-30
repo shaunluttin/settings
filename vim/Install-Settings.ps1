@@ -1,6 +1,6 @@
 
 # Install Settings
-Copy-Item _vimrc ~\_vimrc
+Copy-Item $PSScriptRoot\_vimrc ~\_vimrc
 
 # Install Bundles
 git clone https://github.com/prettier/vim-prettier ~/.vim/pack/plugins/start/vim-prettier
