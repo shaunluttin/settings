@@ -6,7 +6,7 @@
   },
   "editor.acceptSuggestionOnEnter": "on",
   "editor.fontSize": 14,
-  "editor.formatOnSave": true, // Prettier
+  "editor.formatOnSave": false, 
   "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "boundary",
@@ -27,19 +27,30 @@
   "problems.decorations.enabled": false,
   "remote.WSL.fileWatcher.polling": true,
   "powershell.codeFormatting.addWhitespaceAroundPipe": true,
+  "powershell.integratedConsole.showOnStartup": false,
   "scm.diffDecorations": "none",
   "terminal.integrated.fontSize": 14,
-  "todo-tree.tree.showScanModeButton": false,
   "typescript.preferences.quoteStyle": "single",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "window.zoomLevel": 1,
   "workbench.activityBar.visible": false,
-  "workbench.colorTheme": "monokai-chacoral",
+  "vscode-neovim.neovimExecutablePaths.win32": "C:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "none",
   "workbench.colorCustomizations": {
     "list.activeSelectionBackground": "#ffff00",
     "list.activeSelectionForeground": "#000000"
+  },
+  "launch": {
+    "configurations": [
+      {
+        "name": ".NET Attach",
+        "type": "clr",
+        "request": "attach",
+        "requireExactSource": false,
+        "processId": "${command:pickProcess}"
+      }
+    ],
+    "compounds": []
   },
   "files.exclude": {
     "**/.devCache": true,
@@ -50,7 +61,7 @@
     "**/_.swp": true,
     "**/.*~": true,
     "**/.svn": true,
-    "**/bin": false,
+    "**/bin": true,
     "**/CVS": true,
     "**/LICENSE": true,
     "**/node_modules": true,
