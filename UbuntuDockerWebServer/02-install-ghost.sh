@@ -1,5 +1,4 @@
 
-
 sudo mkdir -p /var/www/bigfont-blog
 
 # Create and inpect a named volume.
