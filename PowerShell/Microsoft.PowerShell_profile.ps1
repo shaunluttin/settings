@@ -16,7 +16,7 @@ function prompt {
 }
 
 function Import-MvModulesAndScripts {
-  C:\dev\mediaValet\MediaValet.Labs\DamShell\Import-MvDamShell.ps1
+  C:\dev\mediaValet\MediaValet.Learning\entropy\DamShell\Import-MvDamShell.ps1
 }
 
 function Convert-MarkdownToOdt {
