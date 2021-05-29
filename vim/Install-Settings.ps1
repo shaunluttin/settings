@@ -2,15 +2,14 @@
 # Install Settings
 Copy-Item $PSScriptRoot\_vimrc ~\_vimrc
 
-$path = Resolve-Path ~/
+$vimDir = Resolve-Path ~/.vim
 
-Write-Host "Installing bundles to $path";
+Write-Host "Installing bundles to $vimDir";
 
 # Install Bundles
-git clone https://github.com/prettier/vim-prettier $path/.vim/pack/plugins/start/vim-prettier
-git clone https://github.com/pangloss/vim-javascript.git $path/.vim/pack/vim-javascript/start/vim-javascript
-git clone https://github.com/leafgarland/typescript-vim.git $path/.vim/pack/typescript/start/typescript-vim
-git clone https://github.com/PProvost/vim-ps1.git $path/.vim/pack/vim-ps1/start/vim-ps1
+git clone https://github.com/prettier/vim-prettier $vimDir/pack/plugins/start/vim-prettier
+git clone https://github.com/pangloss/vim-javascript.git $vimDir/pack/vim-javascript/start/vim-javascript
+git clone https://github.com/leafgarland/typescript-vim.git $vimDir/pack/typescript/start/typescript-vim
+git clone https://github.com/PProvost/vim-ps1.git $vimDir/pack/vim-ps1/start/vim-ps1
+git clone https://github.com/chrisbra/csv.vim.git $vimDir/pack/cs-vim/start/cs-vim
 
-# TODO Install preferred colour scheme.
-# TODO Install a completion bundle like CoC or YouCompleteMe.
