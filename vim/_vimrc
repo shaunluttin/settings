@@ -8,12 +8,13 @@ if has('win32') || has('win64')
     endif
 endif
 
+syntax on
+filetype plugin indent on
+
 packloadall
 
 au BufRead,BufNewFile *.ts setfiletype typescript
-
-syntax on
-filetype plugin indent on
+au BufRead,BufNewFile *.csv,*.dat setfiletype csv
 
 " This is nice for vimdiff too `vim -d file1 file2`.
 " Another favorite is peachpuff.
