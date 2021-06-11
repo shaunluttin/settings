@@ -1,17 +1,18 @@
 {
   "breadcrumbs.enabled": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": false, // ES Lint hangs often with a large project.
-    "source.organizeImports": true // TypeScript language server
+    "source.fixAll": false,
+    "source.organizeImports": false
   },
   "editor.acceptSuggestionOnEnter": "on",
-  "editor.fontSize": 44,
-  "editor.formatOnSave": false, 
-  "editor.lineNumbers": "relative",
+  "omnisharp.useGlobalMono": "never",
+  "editor.fontSize": 14,
+  "editor.formatOnSave": false,
+  "editor.lineNumbers": "on",
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [80, 100],
-  "editor.wordWrap": "on",
+  "editor.wordWrap": "off",
   "explorer.autoReveal": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 0,
@@ -61,11 +62,11 @@
     "**/_.swp": true,
     "**/.*~": true,
     "**/.svn": true,
-    "**/bin": true,
     "**/CVS": true,
     "**/LICENSE": true,
     "**/node_modules": true,
     "**/lib": true,
+    "**/bin": true,
     "**/obj": true,
     "**/yarn.lock": true,
     "**/*.js": {
@@ -92,5 +93,11 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "window.zoomLevel": -1,
+  "editor.tabSize": 4,
+  "editor.detectIndentation": false,
+  "editor.cursorStyle": "line",
+  "editor.insertSpaces": true,
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-"
 }
