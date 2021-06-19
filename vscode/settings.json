@@ -93,11 +93,10 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "window.zoomLevel": -1,
-  "editor.tabSize": 4,
-  "editor.detectIndentation": false,
-  "editor.cursorStyle": "line",
-  "editor.insertSpaces": true,
-  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-"
+},
+"editor.tabSize": 4,
+"editor.detectIndentation": false,
+"editor.cursorStyle": "line",
+"editor.insertSpaces": true,
+"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
 }
