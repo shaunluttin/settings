@@ -8,8 +8,8 @@ if has('win32') || has('win64')
     endif
 endif
 
-syntax on
 filetype plugin indent on
+syntax on
 
 packloadall
 
