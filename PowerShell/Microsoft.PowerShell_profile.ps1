@@ -67,3 +67,4 @@ if (Test-Path($ChocolateyProfile)) {
 }
 
 Import-MvModulesAndScripts;
+Import-Module Posh-Git;
