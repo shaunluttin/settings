@@ -105,5 +105,5 @@
   "editor.detectIndentation": false,
   "editor.cursorStyle": "line",
   "editor.insertSpaces": true,
-"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-"
 }
