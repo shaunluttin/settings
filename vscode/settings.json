@@ -7,6 +7,7 @@
   "editor.acceptSuggestionOnEnter": "on",
   "omnisharp.useGlobalMono": "never",
   "editor.fontSize": 14,
+  "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.formatOnSave": false,
   "editor.lineNumbers": "on",
   "editor.minimap.enabled": false,
@@ -34,7 +35,6 @@
   "typescript.preferences.quoteStyle": "single",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.activityBar.visible": false,
-  "vscode-neovim.neovimExecutablePaths.win32": "C:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "none",
   "workbench.colorCustomizations": {
@@ -46,6 +46,13 @@
       {
         "name": ".NET Attach",
         "type": "clr",
+        "request": "attach",
+        "requireExactSource": false,
+        "processId": "${command:pickProcess}"
+      },
+      {
+        "name": ".NET Core Attach",
+        "type": "coreclr",
         "request": "attach",
         "requireExactSource": false,
         "processId": "${command:pickProcess}"
@@ -93,10 +100,10 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-"editor.tabSize": 4,
-"editor.detectIndentation": false,
-"editor.cursorStyle": "line",
-"editor.insertSpaces": true,
+  },
+  "editor.tabSize": 4,
+  "editor.detectIndentation": false,
+  "editor.cursorStyle": "line",
+  "editor.insertSpaces": true,
 "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
 }
