@@ -12,7 +12,7 @@ $FILE_STORAGE_ROOT = 'C:/dev/shaunluttin/happiness/';
 
 function prompt {
   $currentDir = Split-Path -leaf -path (Get-Location)
-  "$currentDir> "
+  "$currentDir$ "
 }
 
 function Import-MvModulesAndScripts {
