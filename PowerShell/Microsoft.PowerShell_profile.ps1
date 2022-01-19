@@ -32,38 +32,59 @@ function Convert-MarkdownToOdt {
     pandoc $absoluteFilePath -f markdown -t odt -o $destination
 }
 
-function Add-Distraction {
-    param([string]$Description, [Switch]$Open) 
-
-    # text to add
-    $monthYear = Get-Date -format "MMM yyyy";
-    $line = "* [ ] ($monthYear) $Description";
+function Prepend-Content {
+    param([string]$Content, [string]$Path, [Switch]$Open) 
 
     # The following machinery lets us *prepend* an item effeciently to a file.
-    $destination = "$FILE_STORAGE_ROOT/distractions.md";
-    $tempFile = "$FILE_STORAGE_ROOT/addDistraction.txt";
+    $tempFile = "$FILE_STORAGE_ROOT/temp.txt";
 
     $line | Set-Content $tempFile;
 
-    if(Test-Path $destination) {
-      Get-Content $destination | Add-Content $tempFile;
-      Remove-Item $destination;
+    if(Test-Path $Path) {
+      Get-Content $Path | Add-Content $tempFile;
+      Remove-Item $Path;
     }
 
-    Rename-Item $tempFile $destination;
+    Rename-Item $tempFile $Path;
 
-    if($Open) {
-      vim $destination;    
+    if($Open) 
+    {
+      vim $Path;    
+    } else 
+    {
+      Write-Output $Path;
+      Write-Output $line;
     }
-
-    Write-Output $destination;
-    Write-Output $line;
 }
 
-function Add-Memo {
-    param([string]$title)
+function Add-Distraction {
+    param([string]$Description, [Switch]$Open) 
 
-    Write-Output $title
+    # Text to add
+    $monthYear = Get-Date -format "MMM yyyy";
+    $line = "* [ ] ($monthYear) $Description";
+
+    Prepend-Content `
+        -Content $line `
+        -Path "$FILE_STORAGE_ROOT/distractions.md" `
+        -Open:$Open
+}
+
+function Start-Pompo {
+    param([string]$Description, [Switch]$Open)
+
+    # Text to add
+    $monthYear = Get-Date -format "MMM yyyy";
+    $line = "* [ ] ($monthYear) $Description";
+
+    Prepend-Content `
+      -Content $line `
+      -Path "$FILE_STORAGE_ROOT/pompos.md" `
+      -Open:$Open
+}
+
+function Stop-Pompo {
+    param([Switch]$Open)
 }
 
 # Chocolatey profile
