@@ -33,14 +33,13 @@ function Convert-MarkdownToOdt {
 }
 
 function Add-Distraction {
-    # slug is work/life
-    param([string]$description, [string]$slug) 
+    param([string]$Description, [Switch]$Open) 
 
     # text to add
     $monthYear = Get-Date -format "MMM yyyy";
-    $line = "* [ ] ($monthYear) $description";
+    $line = "* [ ] ($monthYear) $Description";
 
-    # prepend line to file
+    # The following machinery lets us *prepend* an item effeciently to a file.
     $destination = "$FILE_STORAGE_ROOT/distractions.md";
     $tempFile = "$FILE_STORAGE_ROOT/addDistraction.txt";
 
@@ -52,6 +51,13 @@ function Add-Distraction {
     }
 
     Rename-Item $tempFile $destination;
+
+    if($Open) {
+      vim $destination;    
+    }
+
+    Write-Output $destination;
+    Write-Output $line;
 }
 
 function Add-Memo {
