@@ -61,8 +61,8 @@ function Add-Distraction {
     param([string]$Description, [Switch]$Open) 
 
     # Text to add
-    $monthYear = Get-Date -format "MMM yyyy";
-    $line = "* [ ] ($monthYear) $Description";
+    $moment = Get-Date -format "MMM yyyy";
+    $line = "* [ ] ($moment) $Description";
 
     Prepend-Content `
         -Content $line `
@@ -74,8 +74,8 @@ function Start-Pompo {
     param([string]$Description, [Switch]$Open)
 
     # Text to add
-    $monthYear = Get-Date -format "MMM yyyy";
-    $line = "* [ ] ($monthYear) $Description";
+    $moment = Get-Date -format "MMM yyyy @ hh:mm";
+    $line = "Start: ($moment) $Description";
 
     Prepend-Content `
       -Content $line `
@@ -85,6 +85,24 @@ function Start-Pompo {
 
 function Stop-Pompo {
     param([Switch]$Open)
+
+    $lastPompo = Get-Content -Path "$FILE_STORAGE_ROOT/pompos.md" -TotalCount 1;
+
+    $now = Get-Date; 
+    $timestamp = $now.ToString("MMM yyyy @ hh:mm");
+
+    $duration;
+    if($lastPompo -match "\(.*\)") {
+        $lastTimestamp = [datetime]::ParseExact($matches[0], "(MMM yyyy @ hh:mm)", $null);
+        $duration = $now - $lastTimestamp;
+    }
+
+    $line = "Stop: ($timestamp) $duration";
+
+    Prepend-Content `
+      -Content $line `
+      -Path "$FILE_STORAGE_ROOT/pompos.md" `
+      -Open:$Open
 }
 
 # Chocolatey profile
