@@ -15,8 +15,12 @@ function prompt {
   "$currentDir$ "
 }
 
-function Import-MvModulesAndScripts {
+function Use-MediaValetSettings {
+  # Import MediaValet specific modules.
   C:\dev\mediaValet\MediaValet.Learning\entropy\DamShell\Import-MvDamShell.ps1
+
+  # Stop KillerController, because it breaks git remote communication.
+  Get-Process -name Killer* | Stop-Process -Force
 }
 
 function Convert-MarkdownToOdt {
@@ -111,5 +115,6 @@ if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
 
-Import-MvModulesAndScripts;
+Use-MediaValetSettings;
+
 Import-Module Posh-Git;
