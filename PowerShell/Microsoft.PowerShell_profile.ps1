@@ -15,7 +15,7 @@ function prompt {
   "$currentDir$ "
 }
 
-function Use-MediaValetSettings {
+function Import-MediaValetSettings {
   # Import MediaValet specific modules.
   C:\dev\mediaValet\MediaValet.Learning\entropy\DamShell\Import-MvDamShell.ps1
 
@@ -96,6 +96,7 @@ function Stop-Pompo {
     $timestamp = $now.ToString("MMM yyyy @ hh:mm");
 
     $duration;
+
     if($lastPompo -match "\(.*\)") {
         $lastTimestamp = [datetime]::ParseExact($matches[0], "(MMM yyyy @ hh:mm)", $null);
         $duration = $now - $lastTimestamp;
@@ -115,6 +116,5 @@ if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
 
-Use-MediaValetSettings;
-
+Import-MediaValetSettings;
 Import-Module Posh-Git;
