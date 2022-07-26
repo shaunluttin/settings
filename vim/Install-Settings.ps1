@@ -1,4 +1,3 @@
-
 # Ensure ~/.vim exists
 New-Item -Type Directory ~/.vim -Force;
 $vimDir = Resolve-Path ~/.vim;
@@ -22,4 +21,3 @@ Update-Pack https://github.com/pangloss/vim-javascript.git $vimDir/pack/vim-java
 Update-Pack https://github.com/leafgarland/typescript-vim.git $vimDir/pack/typescript-vim/start/typescript-vim
 Update-Pack https://github.com/PProvost/vim-ps1.git $vimDir/pack/vim-ps1/start/vim-ps1
 Update-Pack https://github.com/chrisbra/csv.vim.git $vimDir/pack/csv-vim/start/csv-vim
-
