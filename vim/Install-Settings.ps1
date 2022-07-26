@@ -17,7 +17,6 @@ function Update-Pack ($source, $destination) {
 }
 
 # Install bundles
-Update-Pack https://github.com/neoclide/coc.nvim.git $vimDir/pack/coc/start/coc
 Update-Pack https://github.com/prettier/vim-prettier $vimDir/pack/vim-prettier/start/vim-prettier
 Update-Pack https://github.com/pangloss/vim-javascript.git $vimDir/pack/vim-javascript/start/vim-javascript
 Update-Pack https://github.com/leafgarland/typescript-vim.git $vimDir/pack/typescript-vim/start/typescript-vim

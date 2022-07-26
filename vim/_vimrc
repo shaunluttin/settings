@@ -32,10 +32,3 @@ com! FormatJson %!jq "."
 
 " For WSL, copy (write) highlighted text to .vimbuffer (and then to Windows clipboad)
 vmap <C-c> y:new ~/.vimbuffer<CR>VGp:x<CR> \| :!cat ~/.vimbuffer \| clip.exe <CR><CR>
-
-" Configure the CoC plugin
-let g:coc_global_extensions = [
-    'coc-tsserver',
-    '@yaegassy/coc-volar',
-    'coc-powershell'
-]
