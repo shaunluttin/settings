@@ -23,7 +23,9 @@ $packages = @(
     "https://github.com/pangloss/vim-javascript.git",
     "https://github.com/leafgarland/typescript-vim.git",
     "https://github.com/PProvost/vim-ps1.git",
-    "https://github.com/chrisbra/csv.vim.git"
+    "https://github.com/chrisbra/csv.vim.git",
+    "https://github.com/joshdick/onedark.vim.git",
+    "https://github.com/morhetz/gruvbox.git"
 );
 
 $packages | ForEach-Object {

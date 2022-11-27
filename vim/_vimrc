@@ -17,8 +17,8 @@ au BufRead,BufNewFile *.ts setfiletype typescript
 au BufRead,BufNewFile *.csv,*.dat setfiletype csv
 
 " This is nice for vimdiff too `vim -d file1 file2`.
-" Another favorite is peachpuff.
-colorscheme desert
+" Favorites include peachpuff, onedark, gruvbox, desert
+colorscheme gruvbox
 
 set tabstop=4
 set shiftwidth=4
