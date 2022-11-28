@@ -30,5 +30,14 @@ set number
 
 com! FormatJson %!jq "."
 
-" For WSL, copy (write) highlighted text to .vimbuffer (and then to Windows clipboad)
+" In Windows Subsystem for Linux, 
+" copy (write) highlighted text to .vimbuffer (and then to Windows clipboad)
 vmap <C-c> y:new ~/.vimbuffer<CR>VGp:x<CR> \| :!cat ~/.vimbuffer \| clip.exe <CR><CR>
+
+# Configure https://github.com/chrisbra/csv.vim
+aug CSV_Editing
+  au!
+  au BufRead,BufWritePost *.csv :%ArrangeColumn
+  au BufWritePre *.csv :%UnArrangeColumn
+aug end
+
