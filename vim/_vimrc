@@ -18,7 +18,8 @@ au BufRead,BufNewFile *.csv,*.dat setfiletype csv
 
 " This is nice for vimdiff too `vim -d file1 file2`.
 " Favorites include peachpuff, onedark, gruvbox, desert
-colorscheme gruvbox
+set background=dark
+colorscheme onedark
 
 set tabstop=4
 set shiftwidth=4
@@ -41,4 +42,3 @@ aug CSV_Editing
   au BufRead,BufWritePost *.csv :%ArrangeColumn
   au BufWritePre *.csv :%UnArrangeColumn
 aug end
-
